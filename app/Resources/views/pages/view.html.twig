@@ -1,0 +1,20 @@
+{{include('pages/inc/header.html.twig')}}
+
+    <a href="{{ absolute_url(asset('')) }}app_dev.php/post" class="btn btn-primary">Back</a>
+
+    <h3>VIEW POST</h3>
+
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            POST
+        </a>
+        <p class="list-group-item">{{ post.title }}</p>
+        <p class="list-group-item">{{ post.description }}</p>
+        <p class="list-group-item">{{ post.category }}</p>
+        <p class="list-group-item">
+             <a href="{{ absolute_url(asset('')) }}app_dev.php/post" class="btn btn-primary">Back</a>
+
+        </p>
+    </div>
+
+{{include('pages/inc/footer.html.twig')}}
